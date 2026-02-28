@@ -8,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI;
 console.log("MONGODB_URI:", MONGODB_URI);
+const cors = require('cors');
+app.use(cors());
+
 
 
 // Middleware para parsear JSON (fundamental para recibir datos del cliente)
